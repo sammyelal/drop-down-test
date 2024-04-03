@@ -8,6 +8,10 @@ on:
                 type: choice
                 options:
                     - Town21
+                    - Town22
+                    - Town23
+                    - Town24
+                    - Town25
                     - Town30
             
 
