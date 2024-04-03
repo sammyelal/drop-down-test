@@ -1,10 +1,19 @@
 name: Select Deploy Test
 on:
     workflow_dispatch: 
+        inputs:
+            environment:
+                description: "Environment"
+                required: true
+                type: choice
+                options:
+                    - Town21
+                    - Town30
+            
 
 jobs:
     dropsdown:
         runs-on: windows-latest
         steps:
             - name: Select Server
-              run: echo "Server Selected"
+              run: echo "Server Selected ${{ github.event.inputs.environment }}"
