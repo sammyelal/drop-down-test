@@ -2,8 +2,8 @@ name: Select Deploy Test
 on:
     workflow_dispatch: 
         inputs:
-            environment:
-                description: "Environment"
+            environment_enum:
+                description: "Environment Enum"
                 required: true
                 type: choice
                 options:
@@ -13,8 +13,10 @@ on:
                     - Town24
                     - Town25
                     - Town30
-            
-
+            environment:
+                description: "Evironment"
+                required: false
+                type: environment
 jobs:
     dropsdown:
         runs-on: windows-latest
