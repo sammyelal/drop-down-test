@@ -23,4 +23,4 @@ jobs:
         runs-on: windows-latest
         steps:
             - name: Select Server
-              run: echo "Server Selected ${{ inputs.environment }}"
+              run: echo "Environment Enum ${{ inputs.environment_enum }}, Environment ${{ inputs.environment }}"
