@@ -1,1 +1,10 @@
 name: Select Deploy Test
+on:
+    workflow_dispatch: 
+
+jobs:
+    dropsdown:
+        runs-on: windows-latest
+        steps:
+            - name: Select Server
+              run: echo "Server Selected"
