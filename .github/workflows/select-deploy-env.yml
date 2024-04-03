@@ -17,9 +17,10 @@ on:
                 description: "Evironment"
                 required: false
                 type: environment
+            
 jobs:
     dropsdown:
         runs-on: windows-latest
         steps:
             - name: Select Server
-              run: echo "Server Selected ${{ github.event.inputs.environment }}"
+              run: echo "Server Selected ${{ inputs.environment }}"
